@@ -1,0 +1,122 @@
+:root {
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+    --neutral-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-light-gray: hsla(0, 0%, 98%);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--neutral-light-gray);
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__header {
+    padding: 1rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container__header h1 {
+    font-size: 2.5rem;
+}
+
+.container__header__title {
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.container__header__subtitle {
+    color: var(--neutral-grayish-blue);
+    font-weight: 400;
+    max-width: 600px;
+}
+
+.container__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__body__section {
+    max-width: 350px;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 16px 22px -5px hsla(229, 6%, 66%, 0.48);
+    margin: 1rem;
+}
+
+.container__body__section--center {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__body__section__content {
+    box-sizing: border-box;
+    width: calc(350px - 2rem);
+    height: 100%;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.container__body__section__content--supervisor {
+    border-top: 4px solid var(--primary-cyan);
+}
+
+.container__body__section__content--team-builder {
+    border-top: 4px solid var(--primary-red);
+}
+
+.container__body__section__content--karma {
+    border-top: 4px solid var(--primary-orange);
+}
+
+.container__body__section__content--calculator {
+    border-top: 4px solid var(--primary-blue);
+}
+
+.container__body__section__content__description {
+    max-width: 280px;
+    font-size: 0.9rem;
+    color: var(--neutral-grayish-blue);
+    word-break: normal;
+}
+
+.container__body__section__content__imgContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.container__body__section__content__imgContainer img {
+    width: 64px;
+    height: 64px;
+}
+
+@media (min-width: 1500px) {
+    .container__body__section--center {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container__body {
+        flex-direction: column;
+    }
+}
