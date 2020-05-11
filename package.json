@@ -1,0 +1,19 @@
+{
+  "name": "four-card-feature-section",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Timeo1210/four-card-feature-section.git"
+  },
+  "author": "Boulhol Timeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timeo1210/four-card-feature-section/issues"
+  },
+  "homepage": "https://github.com/Timeo1210/four-card-feature-section#readme"
+}
